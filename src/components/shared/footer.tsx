@@ -13,10 +13,10 @@ export default function Footer() {
               <div className='lg:w-1/4'>
                 <div className='footer-company-infor flex flex-col justify-between gap-5'>
                   <Image
-                    width={4000}
-                    height={3000}
+                    width={4800}
+                    height={1320}
                     className='footer-logo w-[145px]'
-                    src='/images/LogoWhite.png'
+                    src='/logo-light.png'
                     alt='Logo'
                   />
                   <div className='text caption1 text-white'>
