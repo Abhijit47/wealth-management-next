@@ -3,6 +3,7 @@
 import * as Icon from '@phosphor-icons/react/dist/ssr';
 import Image from 'next/image';
 import { useState } from 'react';
+import SlotCounter from 'react-slot-counter';
 
 const CounterSix = () => {
   const [openVideo, setOpenVideo] = useState(false);
@@ -24,7 +25,10 @@ const CounterSix = () => {
             <span
               className='absolute sm:w-20 w-16 sm:h-20 h-16 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center bg-white rounded-full cursor-pointer duration-300 text-critical hover:bg-critical hover:text-white'
               onClick={() => setOpenVideo(true)}>
-              <Icon.Play weight='fill' className='sm:text-4xl text-3xl' />
+              <Icon.Play
+                weight='fill'
+                className='sm:text-4xl text-3xl animate-ping'
+              />
             </span>
           </div>
         </div>
@@ -33,15 +37,22 @@ const CounterSix = () => {
         <div className='container flex items-center justify-center'>
           <div className='lg:w-5/6 w-full'>
             <div className='capitalize text-white text-center text-2xl font-medium lg:mt-10 mt-7'>
-              Finatex is a leading blockchain platform that provides
-              cutting-edge solutions for businesses and individuals seeking to
-              leverage the power of blockchain technology.{' '}
+              <blockquote>
+                <p>
+                  &ldquo;When a management with a reputation for brilliance,
+                  tackles a business with a reputation for bad economics, it is
+                  the reputation of the business that remains intact&rdquo;
+                  &mdash; Warren Buffett
+                </p>
+              </blockquote>
             </div>
             <div className='grid xl:grid-cols-4 grid-cols-2 gap-y-8 lg:mt-10 mt-7'>
               <div className='item'>
                 <div className='flex flex-col items-center'>
                   <div className='count-block flex items-center'>
-                    <div className='counter heading3 text-white'>2.3</div>
+                    <div className='counter heading3 text-white'>
+                      <SlotCounter value={3.5} />
+                    </div>
                     <span className='heading3 text-white'>k</span>
                   </div>
                   <div className='body1 text-white text-center'>
@@ -52,7 +63,9 @@ const CounterSix = () => {
               <div className='item'>
                 <div className='flex flex-col items-center'>
                   <div className='count-block flex items-center'>
-                    <div className='counter heading3 text-white'>1.77</div>
+                    <div className='counter heading3 text-white'>
+                      <SlotCounter value={1.77} />
+                    </div>
                     <span className='heading3 text-white'>k</span>
                   </div>
                   <div className='body1 text-white text-center'>
@@ -63,7 +76,9 @@ const CounterSix = () => {
               <div className='item'>
                 <div className='flex flex-col items-center'>
                   <div className='count-block flex items-center'>
-                    <div className='counter heading3 text-white'>298</div>
+                    <div className='counter heading3 text-white'>
+                      <SlotCounter value={298} />
+                    </div>
                     <span className='heading3 text-white'>k</span>
                   </div>
                   <div className='body1 text-white text-center'>
@@ -74,7 +89,9 @@ const CounterSix = () => {
               <div className='item'>
                 <div className='flex flex-col items-center'>
                   <div className='count-block flex items-center'>
-                    <div className='counter heading3 text-white'>246</div>
+                    <div className='counter heading3 text-white'>
+                      <SlotCounter value={246} />
+                    </div>
                     <span className='heading3 text-white'>k</span>
                   </div>
                   <div className='body1 text-white text-center'>

@@ -1,3 +1,4 @@
+import { footerLinks } from '@/constants';
 import * as Icon from '@phosphor-icons/react/dist/ssr';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -67,42 +68,23 @@ export default function Footer() {
                 <div className='footer-navigate flex items-center justify-center gap-20'>
                   <div className='footer-nav-item'>
                     <div className='item-heading text-button-sm text-white'>
-                      Quick Links
+                      Products
                     </div>
-                    <ul className='list-nav mt-1'>
-                      <li className='mt-3'>
-                        <Link
-                          className='caption1 has-line-before line-white text-surface hover-underline'
-                          href='/about/about-one'>
-                          About us
-                        </Link>
-                      </li>
-                      <li className='mt-3'>
-                        <Link
-                          className='caption1 has-line-before line-white text-surface hover-underline'
-                          href='/service/service-one'>
-                          Services
-                        </Link>
-                      </li>
-                      <li className='mt-3'>
-                        <Link
-                          className='caption1 has-line-before line-white text-surface hover-underline'
-                          href='/case-studies/case-studies-one'>
-                          Case Studies
-                        </Link>
-                      </li>
-                      <li className='mt-3'>
-                        <Link
-                          className='caption1 has-line-before line-white text-surface hover-underline'
-                          href='/contact/contact-two'>
-                          Contact
-                        </Link>
-                      </li>
+                    <ul className='list-nav mt-1 space-y-2'>
+                      {footerLinks.products.map((link) => (
+                        <li className='' key={link.id}>
+                          <Link
+                            className='caption1 has-line-before line-white text-surface hover-underline'
+                            href={link.href}>
+                            {link.label}
+                          </Link>
+                        </li>
+                      ))}
                     </ul>
                   </div>
                   <div className='footer-nav-item max-sm:hidden'>
-                    <div className='item-heading text-button-sm text-white'>
-                      Pages
+                    {/* <div className='item-heading text-button-sm text-white'>
+                      Contact Us
                     </div>
                     <ul className='list-nav mt-1'>
                       <li className='mt-3'>
@@ -133,11 +115,11 @@ export default function Footer() {
                           Support Center
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
                   <div className='footer-nav-item'>
-                    <div className='item-heading text-button-sm text-white'>
-                      Blog
+                    {/* <div className='item-heading text-button-sm text-white'>
+                      Follow Us
                     </div>
                     <ul className='list-nav mt-1'>
                       <li className='mt-3'>
@@ -168,14 +150,14 @@ export default function Footer() {
                           Blog Detail
                         </Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
               </div>
               <div className='lg:w-1/4'>
                 <div className='company-contact'>
                   <div className='heading text-button-sm text-white'>
-                    Newsletter
+                    Contact Us
                   </div>
                   <div className='mt-3 flex items-center'>
                     <svg
@@ -195,7 +177,7 @@ export default function Footer() {
                         fill='#C1D8FF'></path>
                       <path
                         d='M32.9554 27.4955C32.9554 27.9155 32.8804 28.3505 32.7304 28.7705C32.6854 28.8905 32.6404 29.0105 32.5804 29.1305C32.3254 29.6705 31.9954 30.1805 31.5604 30.6605C30.8254 31.4705 30.0154 32.0555 29.1004 32.4305C29.0854 32.4305 29.0704 32.4455 29.0554 32.4455C28.1704 32.8055 27.2104 33.0005 26.1754 33.0005C24.6454 33.0005 23.0104 32.6405 21.2854 31.9055C19.5604 31.1705 17.8354 30.1805 16.1254 28.9355C15.5404 28.5005 14.9554 28.0655 14.4004 27.6005L19.3054 22.6955C19.7254 23.0105 20.1004 23.2505 20.4154 23.4155C20.4904 23.4455 20.5804 23.4905 20.6854 23.5355C20.8054 23.5805 20.9254 23.5955 21.0604 23.5955C21.3154 23.5955 21.5104 23.5055 21.6754 23.3405L22.8154 22.2155C23.1904 21.8405 23.5504 21.5555 23.8954 21.3755C24.2404 21.1655 24.5854 21.0605 24.9604 21.0605C25.2454 21.0605 25.5454 21.1205 25.8754 21.2555C26.2054 21.3905 26.5504 21.5855 26.9254 21.8405L31.8904 25.3655C32.2804 25.6355 32.5504 25.9505 32.7154 26.3255C32.8654 26.7005 32.9554 27.0755 32.9554 27.4955Z'
-                        fill='#2868D8'></path>
+                        fill='#8a7208'></path>
                     </svg>
                     <div className='text ml-16'>
                       <div className='caption2 text-surface'>
@@ -203,17 +185,23 @@ export default function Footer() {
                       </div>
                       <Link
                         href={'tel:+917305953668'}
-                        className='fw-700 text-white mt-1'>
+                        className='fw-700 block text-white underline hover:no-underline mt-1'>
                         +91 7305953668
                       </Link>
                     </div>
                   </div>
+
+                  {/* social links */}
                   <div className='locate mt-3 flex items-center'>
-                    <Icon.MapPin weight='light' className='text-surface' />
+                    <Icon.MapPin
+                      weight='regular'
+                      className='text-primary-dark size-8'
+                    />
                     <div className='caption1 text-surface ml-2'>
                       Thoraipakkam, Chennai, Tamilnadu - 600097, India
                     </div>
                   </div>
+
                   <form className='send-block mt-5 flex items-center h-[46px] rounded-lg overflow-hidden'>
                     <input
                       className='caption1 text-secondary h-full w-full pr-4 pl-3'
@@ -221,7 +209,7 @@ export default function Footer() {
                       placeholder='Your email address'
                       required
                     />
-                    <button className='flex items-center justify-center w-[46px] h-[46px] bg-blue flex-shrink-0'>
+                    <button className='flex items-center justify-center w-[46px] h-[46px] !bg-primary-dark flex-shrink-0'>
                       <Icon.PaperPlaneTilt className='text-white' />
                     </button>
                   </form>

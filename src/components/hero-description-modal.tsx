@@ -21,7 +21,7 @@ export default function HeroDescriptionModal() {
     <>
       <Button
         onClick={toggleDialog}
-        className='rounded text-sm underline underline-offset-2 text-grey data-active:bg-primary-dark data-hover:bg-primary-dark hover:no-underline'>
+        className='rounded text-base font-semibold underline underline-offset-2 text-primary-light data-active:bg-primary-dark data-hover:bg-primary-dark hover:no-underline'>
         Know more
       </Button>
 

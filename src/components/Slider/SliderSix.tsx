@@ -17,7 +17,7 @@ const SliderSix = () => {
                 height={3000}
                 alt='bgslider'
                 priority={true}
-                className='w-full h-full object-cover'
+                className='w-full h-full object-cover opacity-30'
               />
             </div>
             <div className='container'>
@@ -51,7 +51,7 @@ const SliderSix = () => {
                 <div className='button-block md:mt-7 mt-5'>
                   <Link
                     className='button-main !bg-primary-dark text-white hover:bg-white hover:text-black rounded-full'
-                    href='/service/service-one'>
+                    href='#about'>
                     Get Started
                   </Link>
                 </div>

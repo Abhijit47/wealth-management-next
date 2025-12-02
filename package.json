@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@devnomic/marquee": "^1.0.3",
     "@headlessui/react": "^2.2.9",
     "@phosphor-icons/react": "^2.0.15",
     "animate.css": "^4.1.1",
@@ -19,6 +20,7 @@
     "react-fast-marquee": "^1.6.4",
     "react-paginate": "^8.2.0",
     "react-slick": "^0.30.2",
+    "react-slot-counter": "^3.3.1",
     "sass": "^1.70.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.0.7"

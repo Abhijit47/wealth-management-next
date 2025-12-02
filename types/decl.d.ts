@@ -2,4 +2,4 @@ declare module '*.css';
 declare module '*.scss';
 declare module '*.sass';
 
-declare module 'swiper/css/bundle';
+declare module 'swiper/css*';

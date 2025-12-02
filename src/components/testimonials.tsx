@@ -1,25 +1,24 @@
 'use client';
 
-import TestimonialItem from '@/components/Testimonial/TestimonialItem';
-import { TestimonialType } from '@/type/TestimonialType';
-
-import 'swiper/css/bundle';
-import { A11y, Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import type { SwiperOptions } from 'swiper/types';
 
-// import Slider from "react-slick";
-import dynamic from 'next/dynamic';
-import 'slick-carousel/slick/slick-theme.css';
-import 'slick-carousel/slick/slick.css';
-import { SwiperOptions } from 'swiper/types';
+// import Swiper core and required modules
+import { A11y, Autoplay, Navigation, Pagination } from 'swiper/modules';
 
-const Slider = dynamic(() => import('react-slick'), { ssr: false });
+// Import Swiper styles
+import { testimonials } from '@/constants';
+import Image from 'next/image';
+import 'swiper/css';
+import 'swiper/css/a11y';
+import 'swiper/css/autoplay';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import Rate from './Other/Rate';
 
-interface Props {
-  data: Array<TestimonialType>;
-}
+const isDev = process.env.NODE_ENV === 'development';
 
-const TestimonialSix = ({ data }: Props) => {
+export default function Testimonials() {
   const settings = {
     dots: true,
     arrows: false,
@@ -80,7 +79,9 @@ const TestimonialSix = ({ data }: Props) => {
             spaceBetween={16}
             slidesPerView={1}
             loop={false}
-            // autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={
+              isDev ? undefined : { delay: 3000, disableOnInteraction: false }
+            }
             pagination={{ clickable: true }}
             speed={400}
             initialSlide={1}
@@ -100,9 +101,11 @@ const TestimonialSix = ({ data }: Props) => {
                 spaceBetween: 100,
               },
             }}>
-            {data.slice(5, 9).map((item, index) => (
-              <SwiperSlide key={index}>
-                <TestimonialItem data={item} style='style-six' />
+            {testimonials.map((item, index) => (
+              <SwiperSlide
+                key={index}
+                className={'aspect-auto md:aspect-video w-full h-full'}>
+                <TestimonialItem data={item} />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -110,6 +113,39 @@ const TestimonialSix = ({ data }: Props) => {
       </div>
     </>
   );
-};
+}
 
-export default TestimonialSix;
+type Props = (typeof testimonials)[0];
+
+function TestimonialItem({ data }: { data: Props }) {
+  return (
+    <div className='item flex max-sm:flex-col-reverse h-full w-full'>
+      <div className='sm:w-7/12'>
+        <div className='comment-item style-six lg:py-[72px] lg:px-[60px] sm:py-12 sm:px-10 p-8 rounded-2xl block'>
+          <div className='flex flex-col justify-between h-full'>
+            <div className='icon mb-4'>
+              <i className='icon-quotes text-2xl md:text-4xl lg:text-6xl'></i>
+            </div>
+            <Rate currentRate={data.rating} size={20} />
+            <div className='text-white mt-4'>{`"${data.message}"`}</div>
+            <div className='infor mt-5'>
+              <div className='text-button text-white'>{data.name}</div>
+              <div className='caption1 text-placehover mt-1'>
+                {data.designation}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='sm:w-5/12'>
+        <Image
+          width={500}
+          height={400}
+          className='w-full h-full object-contain'
+          src={data.image}
+          alt={data.name}
+        />
+      </div>
+    </div>
+  );
+}
