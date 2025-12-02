@@ -2,42 +2,42 @@ export const navlinks = [
   {
     id: crypto.randomUUID(),
     label: 'Home',
-    href: '#',
+    href: '#home',
   },
   {
     id: crypto.randomUUID(),
     label: 'Planning',
-    href: '#',
+    href: '#planning',
   },
   {
     id: crypto.randomUUID(),
     label: 'Services',
-    href: '#',
+    href: '#services',
   },
   {
     id: crypto.randomUUID(),
     label: 'Blogs',
-    href: '#',
+    href: '#blogs',
   },
   {
     id: crypto.randomUUID(),
     label: 'Calculators',
-    href: '#',
+    href: '#calculators',
   },
   {
     id: crypto.randomUUID(),
     label: 'Free Consultation',
-    href: '#',
+    href: 'https://forms.gle/2gw3KAo955TEK3jt8',
   },
   {
     id: crypto.randomUUID(),
     label: 'FAQs',
-    href: '#',
+    href: '#faqs',
   },
   {
     id: crypto.randomUUID(),
     label: 'Contact Us',
-    href: '#',
+    href: '#contact-us',
   },
 ];
 
@@ -509,5 +509,88 @@ export const testimonials = [
     image:
       'https://www.ascentwealth.in/Content/ascentwealth.in/UploadedImage/RealImage/590ASrinivasan.jpg',
     rating: 4.5,
+  },
+];
+
+export const services = [
+  {
+    id: crypto.randomUUID(),
+    title: 'Mutual Fund',
+    subtitle: 'Salutations from Ascent Wealth!',
+    description:
+      'At Ascent Wealth, we are dedicated to providing you with individualized assistance and services support as you navigate the world of mutual funds.',
+    cover:
+      'https://www.ascentwealth.in/Content/ascentwealth.in/UploadedImage/RealImage/176mfa.jpg',
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Life and Health Insurance',
+    subtitle: 'Secure the future of your loved ones!',
+    description:
+      'At Ascent Wealth, we remain committed to serve families with Healthcare and Life Insurance covers to protect them from hard times as these are compulsory choice to insulate from unknown risks.',
+    cover:
+      'https://www.ascentwealth.in/Content/ascentwealth.in/UploadedImage/RealImage/507insurance.jpg',
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Corporate FDs, Bonds and NCDs',
+    subtitle: 'An alternative to Traditional Investments!',
+    description:
+      'We at Ascent Wealth recognize the value of consistent & dependable investment options. From the traditional fixed income products, we handpick reliable businesses with reliable ratings and suggest to clients. ',
+    cover:
+      'https://www.ascentwealth.in/Content/ascentwealth.in/UploadedImage/RealImage/301eqa.jpg',
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Estate Planning Solutions',
+    subtitle: 'Secure & Safeguard Your Next Generation!',
+    description:
+      'Ascent Wealth assist our clients through Estate Planning to preserve their assets and wealth built over the years and help them in transfer of their wealth to next generation.',
+    cover:
+      'https://www.ascentwealth.in/Content/ascentwealth.in/UploadedImage/RealImage/729eee.jpg',
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Equity - De-mat Accounts',
+    subtitle: 'Know Your Optimal Level of Investment Risks!',
+    description:
+      'Without a doubt, equity is the best method for accumulating wealth. Almost every investment portfolio needs stocks.',
+    cover:
+      'https://www.ascentwealth.in/Content/ascentwealth.in/UploadedImage/RealImage/384eq.jpg',
+  },
+  {
+    id: crypto.randomUUID(),
+    title: 'Goal Based Financial Planning',
+    subtitle: 'Your future is created by what you do today, not tomorrow',
+    description:
+      'In Mutual Funds a goal oriented Systematic Investment Plan (SIP) is indeed a financial stress buster and wealth creation vehicle in the long term.',
+    cover:
+      'https://www.ascentwealth.in/Content/ascentwealth.in/UploadedImage/RealImage/664goalf.jpg',
+  },
+];
+
+export const riskProfillings = [
+  {
+    heading: 'Why Risk Profiling is important for investors?',
+    description: [
+      `Most investors start with unrealistic expectations about risk and return. Unrealistic expectations can quickly become unfulfilled expectations and unfulfilled expectations tend to cause grief for all concerned. There is often a gap between the level of risk which a client would normally choose to take, their risk tolerance, and the risk associated with the return required to achieve their goals. profiling is a process for finding the optimal level of investment risk for your client by balancing their risk required, risk capacity and their individual risk tolerance. There is often a mismatch between risk required, capacity and tolerance.`,
+      `It is psychological and critical to know how comfortable an investor is with investment ups and downs, completing the following questionnaire will assist in understanding the risk profiling of the investor and make suitable investments decisions.`,
+    ],
+    riskLists: [
+      {
+        id: crypto.randomUUID(),
+        item: 'Risk Tolerance is the level of financial risk the client is emotionally comfortable with. For example,How much a person is willing for their portfolio to diminish for a chance to make bigger returns.',
+      },
+      {
+        id: crypto.randomUUID(),
+        item: "Risk Required is the risk associated with the return required to achieve the client's goals from the financial resources available.",
+      },
+      {
+        id: crypto.randomUUID(),
+        item: 'Risk Capacity is the level of financial risk the client can afford to take.',
+      },
+    ],
+    href: 'https://forms.gle/F1k3s6qWDpFLyQ2D8',
+    quote: `"Consuming knowledge can be fairly useless if you don't pair it with intelligent behavioral design and systems" - Ben Carlson`,
   },
 ];

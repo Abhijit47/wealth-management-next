@@ -6,7 +6,7 @@ import HeroDescriptionModal from '../hero-description-modal';
 
 const SliderSix = () => {
   return (
-    <>
+    <section id='home'>
       <div className='slider-block style-six'>
         <div className='slider-main'>
           <div className='slider-item slider-first'>
@@ -60,7 +60,7 @@ const SliderSix = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

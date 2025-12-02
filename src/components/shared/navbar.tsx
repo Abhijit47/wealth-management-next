@@ -1,53 +1,54 @@
 'use client';
 
+import { navlinks } from '@/constants';
 import * as Icon from '@phosphor-icons/react/dist/ssr';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-const navlinks = [
-  {
-    id: crypto.randomUUID(),
-    label: 'Home',
-    href: '/',
-  },
-  {
-    id: crypto.randomUUID(),
-    label: 'Planning',
-    href: '#planning',
-  },
-  {
-    id: crypto.randomUUID(),
-    label: 'Services',
-    href: '#services',
-  },
-  {
-    id: crypto.randomUUID(),
-    label: 'Blogs',
-    href: '#blogs',
-  },
-  {
-    id: crypto.randomUUID(),
-    label: 'Calculators',
-    href: '#calculators',
-  },
-  {
-    id: crypto.randomUUID(),
-    label: 'Free Consultation',
-    href: '#free-consultation',
-  },
-  {
-    id: crypto.randomUUID(),
-    label: 'Faqs',
-    href: '#faqs',
-  },
-  {
-    id: crypto.randomUUID(),
-    label: 'Contact Us',
-    href: '#contact-us',
-  },
-];
+// const navlinks = [
+//   {
+//     id: crypto.randomUUID(),
+//     label: 'Home',
+//     href: '/',
+//   },
+//   {
+//     id: crypto.randomUUID(),
+//     label: 'Planning',
+//     href: '#planning',
+//   },
+//   {
+//     id: crypto.randomUUID(),
+//     label: 'Services',
+//     href: '#services',
+//   },
+//   {
+//     id: crypto.randomUUID(),
+//     label: 'Blogs',
+//     href: '#blogs',
+//   },
+//   {
+//     id: crypto.randomUUID(),
+//     label: 'Calculators',
+//     href: '#calculators',
+//   },
+//   {
+//     id: crypto.randomUUID(),
+//     label: 'Free Consultation',
+//     href: '#free-consultation',
+//   },
+//   {
+//     id: crypto.randomUUID(),
+//     label: 'Faqs',
+//     href: '#faqs',
+//   },
+//   {
+//     id: crypto.randomUUID(),
+//     label: 'Contact Us',
+//     href: '#contact-us',
+//   },
+// ];
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');
