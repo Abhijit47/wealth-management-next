@@ -1,7 +1,6 @@
 'use client';
 
 import { useServiceModal } from '@/contexts/service-modal-context';
-import { ServiceType } from '@/type/ServiceType';
 import {
   Button,
   Description,
@@ -11,21 +10,20 @@ import {
   DialogTitle,
 } from '@headlessui/react';
 
-export default function ServiceModal({
-  title,
-  desc,
-  shortDesc,
-  category,
-  icon,
-}: ServiceType) {
-  const { isOpenServiceModal, onToggleServiceModal } = useServiceModal();
+export default function ServiceModal() {
+  const { isOpenServiceModal, selectedService, closeServiceModal } =
+    useServiceModal();
+
+  if (!selectedService) return null;
+
+  const { title, desc, shortDesc } = selectedService;
 
   return (
     <Dialog
       open={isOpenServiceModal}
       as='div'
       className='relative z-10 focus:outline-none'
-      onClose={onToggleServiceModal}>
+      onClose={closeServiceModal}>
       {/* The backdrop, rendered as a fixed sibling to the panel container */}
       <DialogBackdrop className='fixed inset-0 bg-black/30' />
       <div className='fixed inset-0 z-10 w-screen overflow-y-auto'>
@@ -41,7 +39,7 @@ export default function ServiceModal({
             <div className='mt-4'>
               <Button
                 className='inline-flex items-center gap-2 rounded-md bg-gray-700 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:not-data-focus:outline-none data-focus:outline data-focus:outline-white data-hover:bg-gray-600 data-open:bg-gray-700'
-                onClick={onToggleServiceModal}>
+                onClick={closeServiceModal}>
                 Got it, thanks!
               </Button>
             </div>

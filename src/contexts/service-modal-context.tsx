@@ -1,10 +1,13 @@
 'use client';
 
+import { ServiceType } from '@/type/ServiceType';
 import { createContext, useContext, useState } from 'react';
 
 type ServiceModalContextType = {
   isOpenServiceModal: boolean;
-  onToggleServiceModal: () => void;
+  selectedService: ServiceType | null;
+  openServiceModal: (service: ServiceType) => void;
+  closeServiceModal: () => void;
 };
 
 const ServiceModalContext = createContext({} as ServiceModalContextType);
@@ -15,16 +18,26 @@ export function ServiceModalProvider({
   children: React.ReactNode;
 }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState<ServiceType | null>(
+    null
+  );
+  function openServiceModal(service: ServiceType) {
+    setSelectedService(service);
+    setIsOpen(true);
+  }
 
-  function toggleDialog() {
-    setIsOpen((prev) => !prev);
+  function closeServiceModal() {
+    setIsOpen(false);
+    setSelectedService(null);
   }
 
   return (
     <ServiceModalContext.Provider
       value={{
         isOpenServiceModal: isOpen,
-        onToggleServiceModal: toggleDialog,
+        selectedService,
+        openServiceModal,
+        closeServiceModal,
       }}>
       {children}
     </ServiceModalContext.Provider>

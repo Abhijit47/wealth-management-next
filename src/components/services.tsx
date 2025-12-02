@@ -2,6 +2,7 @@ import { ServiceModalProvider } from '@/contexts/service-modal-context';
 import { ServiceType } from '@/type/ServiceType';
 import Link from 'next/link';
 import ServiceItem from './service-item';
+import ServiceModal from './service-modal';
 // import ServiceItem from './Service/ServiceItem';
 
 interface Props {
@@ -33,6 +34,7 @@ export default function Service({ data }: Props) {
                   <ServiceItem data={item} key={index} />
                 ))}
             </div>
+            <ServiceModal />
           </ServiceModalProvider>
         </div>
       </div>
