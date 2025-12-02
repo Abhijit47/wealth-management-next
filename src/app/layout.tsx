@@ -1,6 +1,7 @@
 import Footer from '@/components/shared/footer';
 import Navbar from '@/components/shared/navbar';
 import TopNav from '@/components/shared/top-nav';
+import { LazyWhatsAppIcon } from '@/components/whatsapp-icon';
 import { seo } from '@/constants';
 import '@/styles/style.scss';
 import type { Metadata } from 'next';
@@ -62,6 +63,7 @@ export default function RootLayout({
         </header>
         {children}
         <Footer />
+        <LazyWhatsAppIcon />
       </body>
     </html>
   );
