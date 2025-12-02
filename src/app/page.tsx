@@ -10,6 +10,7 @@
 // import BlogOne from "@/components/Section/Blog/BlogOne";
 // import PartnerOne from "@/components/Section/Partner/PartnerOne";
 // import Footer from "@/components/Footer/Footer";
+import Faqs from '@/components/faqs';
 import LogoMarquee from '@/components/logo-marquee';
 import AboutSix from '@/components/Section/About/AboutSix';
 import BlogSix from '@/components/Section/Blog/BlogSix';
@@ -59,6 +60,7 @@ export default function Home() {
         <ServiceSixSecond />
         {/* <TestimonialSix data={testimonialData} /> */}
         <Testimonials />
+        <Faqs />
         <BlogSix data={blogData} />
         <FormRequestSix
           bgImg='https://finatex-next.vercel.app/images/cta/bg-cta6.png'

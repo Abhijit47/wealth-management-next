@@ -10,7 +10,9 @@ interface Props {
 
 const BlogSix: React.FC<Props> = ({ data }) => {
   return (
-    <section className='list-blog three-col text-white style-six lg:py-[100px] sm:py-16 py-10'>
+    <section
+      id='blogs'
+      className='list-blog three-col text-white style-six lg:py-[100px] sm:py-16 py-10'>
       <div className='container'>
         <div className='heading flex items-center justify-between'>
           <h3 className='heading3'>Latest News</h3>
