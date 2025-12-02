@@ -1,3 +1,6 @@
+import Footer from '@/components/shared/footer';
+import Navbar from '@/components/shared/navbar';
+import TopNav from '@/components/shared/top-nav';
 import '@/styles/style.scss';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -16,7 +19,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-black overflow-x-hidden`}>
+        <header id='header' className={'style-six'}>
+          <TopNav />
+          <Navbar />
+        </header>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
