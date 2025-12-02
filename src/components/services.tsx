@@ -1,15 +1,16 @@
+import { ServiceModalProvider } from '@/contexts/service-modal-context';
 import { ServiceType } from '@/type/ServiceType';
 import Link from 'next/link';
-import React from 'react';
-import ServiceItem from '../../Service/ServiceItem';
+import ServiceItem from './service-item';
+// import ServiceItem from './Service/ServiceItem';
 
 interface Props {
   data: Array<ServiceType>;
 }
 
-const ServiceSix: React.FC<Props> = ({ data }) => {
+export default function Service({ data }: Props) {
   return (
-    <>
+    <section id='services'>
       <div className='service-block style-six lg:pt-[100px] sm:pt-16 pt-10'>
         <div className='container flex flex-col items-center'>
           <div className='heading3 lg:w-7/12 text-white text-center'>
@@ -23,23 +24,18 @@ const ServiceSix: React.FC<Props> = ({ data }) => {
               View case
             </Link>
           </div>
-          <div className='list-service grid lg:grid-cols-3 sm:grid-cols-2 gap-10 gap-y-20 mt-20'>
-            {data
-              .filter((item) => item.category === 'blockchain')
-              .slice(0, 6)
-              .map((item, index) => (
-                <ServiceItem
-                  data={item}
-                  style='style-six'
-                  number={index}
-                  key={index}
-                />
-              ))}
-          </div>
+          <ServiceModalProvider>
+            <div className='list-service grid lg:grid-cols-3 sm:grid-cols-2 gap-10 gap-y-20 mt-20'>
+              {data
+                .filter((item) => item.category === 'wealth')
+                .slice(0, 6)
+                .map((item, index) => (
+                  <ServiceItem data={item} key={index} />
+                ))}
+            </div>
+          </ServiceModalProvider>
         </div>
       </div>
-    </>
+    </section>
   );
-};
-
-export default ServiceSix;
+}

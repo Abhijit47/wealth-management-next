@@ -19,10 +19,16 @@ export default function Footer() {
                     alt='Logo'
                   />
                   <div className='text caption1 text-white'>
-                    We are a diversified company specialized in providing
-                    comprehensive financial solutions for individuals and
-                    businesses.
+                    We are an AMFI registered Mutual Funds Distributor engaged
+                    in distribution of Equity, Debt, Hybrid, Sector and Thematic
+                    Mutual Funds. We also provide services with respect to
+                    various secondary Bonds, Equity trading, NCDs, Life and
+                    Health Insurance, Corporate FDs and Estate Planning
+                    solutions etc.
                   </div>
+                  <strong className={'text-xs text-white'}>
+                    AMFI Registered Mutual Funds Distributor (ARN 109866)
+                  </strong>
                   <div className='list-social flex items-center gap-2.5 style-one'>
                     <Link
                       className='item rounded-full w-7 h-7 border-2 border-grey flex items-center justify-center'
@@ -195,15 +201,17 @@ export default function Footer() {
                       <div className='caption2 text-surface'>
                         Need help? 24/7{' '}
                       </div>
-                      <div className='fw-700 text-white mt-1'>
-                        001-1234-88888
-                      </div>
+                      <Link
+                        href={'tel:+917305953668'}
+                        className='fw-700 text-white mt-1'>
+                        +91 7305953668
+                      </Link>
                     </div>
                   </div>
                   <div className='locate mt-3 flex items-center'>
                     <Icon.MapPin weight='light' className='text-surface' />
                     <div className='caption1 text-surface ml-2'>
-                      101 E 129th St, East Chicago, IN 46312, US
+                      Thoraipakkam, Chennai, Tamilnadu - 600097, India
                     </div>
                   </div>
                   <form className='send-block mt-5 flex items-center h-[46px] rounded-lg overflow-hidden'>
@@ -224,21 +232,28 @@ export default function Footer() {
             <div className='footer-bottom flex items-center justify-between pt-3 pb-3'>
               <div className='left-block flex items-center'>
                 <div className='copy-right text-surface caption1'>
-                  ©2023 Finatex. All Rights Reserved.
+                  &copy;{new Date().getFullYear()} Ascent Wealth. All Rights
+                  Reserved.
                 </div>
               </div>
               <div className='nav-link flex items-center gap-2.5'>
-                <a className='text-surface caption1 hover-underline' href='#!'>
+                <Link
+                  className='text-surface caption1 hover-underline'
+                  href='#!'>
                   Terms Of Services
-                </a>
+                </Link>
                 <span className='text-surface caption1'>|</span>
-                <a className='text-surface caption1 hover-underline' href='#!'>
+                <Link
+                  className='text-surface caption1 hover-underline'
+                  href='#!'>
                   Privacy Policy
-                </a>
+                </Link>
                 <span className='text-surface caption1'>|</span>
-                <a className='text-surface caption1 hover-underline' href='#!'>
+                <Link
+                  className='text-surface caption1 hover-underline'
+                  href='#!'>
                   Cookie Policy
-                </a>
+                </Link>
               </div>
             </div>
           </div>

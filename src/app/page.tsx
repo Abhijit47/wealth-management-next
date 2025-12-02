@@ -16,9 +16,9 @@ import CounterSix from '@/components/Section/Counter/CounterSix';
 import FormRequestSix from '@/components/Section/FormRequest/FormRequestSix';
 import PartnerSix from '@/components/Section/Partner/PartnerSix';
 import PricingSix from '@/components/Section/Pricing/PricingSix';
-import ServiceSix from '@/components/Section/Service/ServiceSix';
 import ServiceSixSecond from '@/components/Section/Service/ServiceSixSecond';
 import TestimonialSix from '@/components/Section/Testimonial/TestimonialSix';
+import Service from '@/components/services';
 import SliderSix from '@/components/Slider/SliderSix';
 import blogData from '@/data/blog.json';
 import serviceData from '@/data/service.json';
@@ -51,7 +51,7 @@ export default function Home() {
         <SliderSix />
         <PartnerSix classname='bg-black' />
         <CounterSix />
-        <ServiceSix data={serviceData} />
+        <Service data={serviceData} />
         <AboutSix />
         <PricingSix />
         <ServiceSixSecond />
