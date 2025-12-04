@@ -8,10 +8,11 @@ const AboutSix = () => {
           <div className='w-full lg:w-1/2 sm:w-2/3 xl:px-16 px-10'>
             <div className='bg-img w-full'>
               <Image
-                width={4000}
-                height={4000}
+                width={960}
+                height={680}
                 className='w-full'
-                src='https://www.ascentwealth.in/Content/ascentwealth.in/UploadedImage/RealImage/954self.png'
+                // src='https://www.ascentwealth.in/Content/ascentwealth.in/UploadedImage/RealImage/954self.png'
+                src={'/images/component/960x680.png'}
                 alt='img'
               />
             </div>
@@ -62,7 +63,7 @@ const AboutSix = () => {
               </p>
               {`At Finatex, we're passionate about helping freelancers succeed in today's competitive digital landscape. With years of experience in the industry, we understand the unique challenges & opportunities that freelancers face when it comes to SEO and digital marketing.`}
             </div>
-            <div className='flex items-center gap-4 mt-9'>
+            {/* <div className='flex items-center gap-4 mt-9'>
               <div className='flex items-center'>
                 <div className='img sm:w-12 w-10 sm:h-12 h-10 rounded-full overflow-hidden bg-placehover p-0.5 z-[3]'>
                   <Image
@@ -120,7 +121,7 @@ const AboutSix = () => {
                 <br className='max-xl:hidden max-lg:block max-[400px]:hidden' />{' '}
                 the globe
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

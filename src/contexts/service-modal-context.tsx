@@ -1,6 +1,6 @@
 'use client';
 
-import { ServiceType } from '@/type/ServiceType';
+// import { ServiceType } from '@/type/ServiceType';
 import { createContext, useContext, useState } from 'react';
 
 type ServiceModalContextType = {

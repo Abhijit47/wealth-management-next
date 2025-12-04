@@ -21,7 +21,9 @@ export default function HeroDescriptionModal() {
     <>
       <Button
         onClick={toggleDialog}
-        className='rounded text-base font-semibold underline underline-offset-2 text-primary-light data-active:bg-primary-dark data-hover:bg-primary-dark hover:no-underline'>
+        className='button-main !bg-primary-dark text-white hover:bg-white hover:text-black rounded-full'
+        // className='rounded text-base font-semibold underline underline-offset-2 text-primary-light data-active:bg-primary-dark data-hover:bg-primary-dark hover:no-underline'
+      >
         Know more
       </Button>
 
@@ -33,13 +35,13 @@ export default function HeroDescriptionModal() {
         onClose={toggleDialog}>
         <DialogBackdrop
           transition
-          className='fixed inset-0 bg-primary-dark/10 duration-300 ease-out data-closed:opacity-0'
+          className='fixed inset-0 bg-black/90 duration-300 ease-out data-closed:opacity-0'
         />
         <div className='fixed inset-0 z-10 w-screen overflow-y-auto'>
           <div className='flex min-h-full items-center justify-center p-4'>
             <DialogPanel
               transition
-              className='w-full max-w-7xl h-full rounded-xl bg-primary-dark/35 p-6 backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0 space-y-4'>
+              className='w-full max-w-7xl h-full rounded-xl bg-primary-dark/50 p-6 backdrop-blur-2xl duration-300 ease-out data-closed:transform-[scale(95%)] data-closed:opacity-0 space-y-4'>
               <DialogTitle
                 as='div'
                 className='flex items-center justify-between'>

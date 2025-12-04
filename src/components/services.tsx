@@ -1,5 +1,6 @@
 import { ServiceModalProvider } from '@/contexts/service-modal-context';
-import { ServiceType } from '@/type/ServiceType';
+// import { ServiceType } from '@/type/ServiceType';
+import { services } from '@/constants';
 import Link from 'next/link';
 import ServiceItem from './service-item';
 import ServiceModal from './service-modal';
@@ -9,7 +10,7 @@ interface Props {
   data: Array<ServiceType>;
 }
 
-export default function Service({ data }: Props) {
+export default function Service() {
   return (
     <section id='services'>
       <div className='service-block style-six lg:pt-[100px] sm:pt-16 pt-10'>
@@ -27,12 +28,15 @@ export default function Service({ data }: Props) {
           </div>
           <ServiceModalProvider>
             <div className='list-service grid lg:grid-cols-3 sm:grid-cols-2 gap-10 gap-y-20 mt-20'>
-              {data
+              {/* {data
                 .filter((item) => item.category === 'wealth')
                 .slice(0, 6)
                 .map((item, index) => (
-                  <ServiceItem data={item} key={index} />
-                ))}
+                  <ServiceItem data={item} key={item.id} />
+                ))} */}
+              {services.map((item, index) => (
+                <ServiceItem data={item} key={item.id} />
+              ))}
             </div>
             <ServiceModal />
           </ServiceModalProvider>

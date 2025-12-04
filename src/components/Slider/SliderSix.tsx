@@ -1,6 +1,6 @@
 import { heroDescriptions } from '@/constants';
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 import 'swiper/css/bundle';
 import HeroDescriptionModal from '../hero-description-modal';
 
@@ -41,19 +41,20 @@ const SliderSix = () => {
                   </div>
                 </div>
                 <div className='body2 md:mt-6 mt-4 text-white xl:w-1/2 sm:w-2/3 w-full'>
-                  <p className={''}>
-                    {heroDescriptions[0].description.length > 100
+                  <p className={'line-clamp-4'}>
+                    {/* {heroDescriptions[0].description.length > 100
                       ? heroDescriptions[0].description.slice(0, 250) + `...`
-                      : heroDescriptions[0].description}{' '}
-                    <HeroDescriptionModal />
+                      : heroDescriptions[0].description}{' '} */}
+                    {heroDescriptions[0].description}
                   </p>
                 </div>
                 <div className='button-block md:mt-7 mt-5'>
-                  <Link
+                  {/* <Link
                     className='button-main !bg-primary-dark text-white hover:bg-white hover:text-black rounded-full'
                     href='#about'>
-                    Get Started
-                  </Link>
+                    Know more
+                  </Link> */}
+                  <HeroDescriptionModal />
                 </div>
               </div>
             </div>

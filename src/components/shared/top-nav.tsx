@@ -5,17 +5,15 @@ export default function TopNav() {
   return (
     <div className='top-nav style-six !bg-primary-dark'>
       <div className='container flex items-center justify-between h-[44px]'>
-        <div className='left-block flex items-center'>
+        <div className='left-block flex flex-wrap items-center gap-2'>
           <div className='location flex items-center max-lg:hidden'>
             <Icon.MapPin className='text-white text-xl' />
-            <span className='ml-2 caption1 text-white'>
-              Thoraipakkam, Chennai, Tamilnadu - 600097, India
-            </span>
+            <span className='ml-2 caption1 text-white'>Chennai, India</span>
           </div>
           <div className='mail lg:ml-7 flex items-center'>
             <Icon.Envelope className='text-white text-xl' />
             <span className='ml-2 caption1 text-white'>
-              ascentwealth.invest@gmail.com
+              info@ascentwealth.in
             </span>
           </div>
         </div>
@@ -49,7 +47,11 @@ export default function TopNav() {
               className='item rounded-full w-7 h-7 border-grey border-2 flex items-center justify-center'
               href='https://api.whatsapp.com/send/?phone=919841013668&text&type=phone_number&app_absent=0'
               target='_blank'>
-              <i className='icon-whatsapp-logo text-xs'></i>
+              {/* <i className='icon-whatsapp-logo text-xs'></i> */}
+              <Icon.WhatsappLogo
+                weight='regular'
+                className='size-5 text-surface hover:text-secondary'
+              />
             </Link>
             <Link
               className='item rounded-full w-7 h-7 border-grey border-2 flex items-center justify-center'

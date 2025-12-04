@@ -94,7 +94,7 @@ export default function Navbar() {
                   height={1320}
                   alt='logo'
                   priority={true}
-                  className='w-[149px] max-sm:w-[128px]'
+                  className='w-[150px] h-full max-sm:w-[128px]'
                 />
               </Link>
               <div className='menu-center-block h-full'>
@@ -498,7 +498,7 @@ export default function Navbar() {
               <div className='menu-right-block flex items-center'>
                 <Link
                   // href={'/contact/contact-one'}
-                  href={'/'}
+                  href={'#contact-us'}
                   className='max-lg:hidden button-main bg-primary-dark text-white rounded-full hover:bg-black'>
                   Get a quote
                 </Link>

@@ -1,7 +1,7 @@
 'use client';
 
-import * as Icon from '@phosphor-icons/react/dist/ssr';
-import Image from 'next/image';
+// import * as Icon from '@phosphor-icons/react/dist/ssr';
+// import Image from 'next/image';
 import { useState } from 'react';
 import SlotCounter from 'react-slot-counter';
 
@@ -10,7 +10,7 @@ const CounterSix = () => {
 
   return (
     <>
-      <div className='video-block style-six lg:mt-[100px] sm:mt-16 mt-10'>
+      {/* <div className='video-block style-six lg:mt-[100px] sm:mt-16 mt-10'>
         <div className='container'>
           <div className='video w-full sm:py-9 py-4 sm:px-10 px-5 rounded-3xl overflow-hidden relative max-sm:h-[300px]'>
             <div className='bg-img w-full h-full rounded-2xl overflow-hidden'>
@@ -32,7 +32,7 @@ const CounterSix = () => {
             </span>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className='count-number-block style-six'>
         <div className='container flex items-center justify-center'>
           <div className='lg:w-5/6 w-full'>

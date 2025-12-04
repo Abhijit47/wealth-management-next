@@ -10,20 +10,22 @@
 // import BlogOne from "@/components/Section/Blog/BlogOne";
 // import PartnerOne from "@/components/Section/Partner/PartnerOne";
 // import Footer from "@/components/Footer/Footer";
+import CalculatorSection from '@/components/calculator-section';
 import Faqs from '@/components/faqs';
 import LogoMarquee from '@/components/logo-marquee';
+import QuoteMarquee from '@/components/quote-marquee';
+import RiskProfilling from '@/components/risk-profilling';
 import AboutSix from '@/components/Section/About/AboutSix';
 import BlogSix from '@/components/Section/Blog/BlogSix';
 import CounterSix from '@/components/Section/Counter/CounterSix';
 import FormRequestSix from '@/components/Section/FormRequest/FormRequestSix';
 // import PartnerSix from '@/components/Section/Partner/PartnerSix';
 // import PricingSix from '@/components/Section/Pricing/PricingSix';
-import ServiceSixSecond from '@/components/Section/Service/ServiceSixSecond';
+// import ServiceSixSecond from '@/components/Section/Service/ServiceSixSecond';
 import Service from '@/components/services';
 import SliderSix from '@/components/Slider/SliderSix';
 import Testimonials from '@/components/testimonials';
 import blogData from '@/data/blog.json';
-import serviceData from '@/data/service.json';
 // import testimonialData from '@/data/testimonial.json';
 
 export default function Home() {
@@ -54,14 +56,25 @@ export default function Home() {
         {/* <PartnerSix classname='bg-black' /> */}
         <LogoMarquee />
         <CounterSix />
-        <Service data={serviceData} />
+        <Service />
         <AboutSix />
+        <RiskProfilling />
+        <QuoteMarquee>
+          <blockquote className={'pt-8 bg-secondary/10'}>
+            <p className={'text-surface text-lg font-bold'}>
+              &ldquo;Consuming knowledge can be fairly useless if you don&apos;t
+              pair it with intelligent behavioral design and systems&rdquo; -
+              Ben Carlson
+            </p>
+          </blockquote>
+        </QuoteMarquee>
+
         {/* <PricingSix /> */}
-        <ServiceSixSecond />
+        <CalculatorSection />
         {/* <TestimonialSix data={testimonialData} /> */}
         <Testimonials />
-        <Faqs />
         <BlogSix data={blogData} />
+        <Faqs />
         <FormRequestSix
           bgImg='https://finatex-next.vercel.app/images/cta/bg-cta6.png'
           classname='style-two style-six'
