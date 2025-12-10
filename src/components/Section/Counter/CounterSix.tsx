@@ -51,7 +51,13 @@ const CounterSix = () => {
                 <div className='flex flex-col items-center'>
                   <div className='count-block flex items-center'>
                     <div className='counter heading3 text-white'>
-                      <SlotCounter value={3.5} />
+                      <SlotCounter
+                        value={3.5}
+                        animateOnVisible={{
+                          triggerOnce: false,
+                          rootMargin: '0px 0px -100px 0px',
+                        }}
+                      />
                     </div>
                     <span className='heading3 text-white'>k</span>
                   </div>
@@ -64,7 +70,13 @@ const CounterSix = () => {
                 <div className='flex flex-col items-center'>
                   <div className='count-block flex items-center'>
                     <div className='counter heading3 text-white'>
-                      <SlotCounter value={1.77} />
+                      <SlotCounter
+                        value={1.77}
+                        animateOnVisible={{
+                          triggerOnce: false,
+                          rootMargin: '0px 0px -100px 0px',
+                        }}
+                      />
                     </div>
                     <span className='heading3 text-white'>k</span>
                   </div>
@@ -77,7 +89,13 @@ const CounterSix = () => {
                 <div className='flex flex-col items-center'>
                   <div className='count-block flex items-center'>
                     <div className='counter heading3 text-white'>
-                      <SlotCounter value={298} />
+                      <SlotCounter
+                        value={298}
+                        animateOnVisible={{
+                          triggerOnce: false,
+                          rootMargin: '0px 0px -100px 0px',
+                        }}
+                      />
                     </div>
                     <span className='heading3 text-white'>k</span>
                   </div>
@@ -90,7 +108,13 @@ const CounterSix = () => {
                 <div className='flex flex-col items-center'>
                   <div className='count-block flex items-center'>
                     <div className='counter heading3 text-white'>
-                      <SlotCounter value={246} />
+                      <SlotCounter
+                        value={246}
+                        animateOnVisible={{
+                          triggerOnce: false,
+                          rootMargin: '0px 0px -100px 0px',
+                        }}
+                      />
                     </div>
                     <span className='heading3 text-white'>k</span>
                   </div>

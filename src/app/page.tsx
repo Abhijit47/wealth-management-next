@@ -54,7 +54,7 @@ export default function Home() {
       <main className='content'>
         <SliderSix />
         {/* <PartnerSix classname='bg-black' /> */}
-        <LogoMarquee />
+
         <CounterSix />
         <Service />
         <AboutSix />
@@ -75,6 +75,7 @@ export default function Home() {
         <Testimonials />
         <BlogSix data={blogData} />
         <Faqs />
+        <LogoMarquee />
         <FormRequestSix
           bgImg='https://finatex-next.vercel.app/images/cta/bg-cta6.png'
           classname='style-two style-six'

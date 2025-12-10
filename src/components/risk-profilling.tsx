@@ -77,13 +77,22 @@ export default function RiskProfilling() {
                 opacity: isInView ? 1 : 0,
                 transition: 'all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
               }}>
-              <div className='bg-img'>
-                <Image
+              <div className='bg-img relative w-full h-full'>
+                {/* <Image
                   width={5000}
                   height={5000}
-                  className='w-full'
+                  className='w-full hidden'
                   src='/images/component/gateway2-bg.png'
                   alt=''
+                /> */}
+
+                <Image
+                  src={'/images/20822848_NA_October_12 1.svg'}
+                  width={750}
+                  height={500}
+                  // fill
+                  alt='Decorative'
+                  className='w-full h-full rounded-lg object-cover object-center'
                 />
               </div>
               <div className='feature-item py-4 px-6 rounded-2xl bg-white inline-flex items-center gap-4 box-shadow'>
@@ -95,7 +104,7 @@ export default function RiskProfilling() {
                   <div className='heading7 text-secondary'>Projects</div>
                 </div>
               </div>
-              <div className='feature-item py-4 px-6 rounded-2xl bg-white inline-flex items-center gap-4 box-shadow'>
+              <div className='feature-item !top-4 py-4 px-6 rounded-2xl bg-white inline-flex items-center gap-4 box-shadow'>
                 <Icon.Star weight='fill' className='text-yellow text-3xl' />
                 <div className='text'>
                   <div className='heading7'>4.8</div>

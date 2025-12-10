@@ -16,13 +16,13 @@ export default function Faqs() {
     <section id='faqs' className={'text-white'}>
       <div className='faq-block lg:py-[100px] sm:py-16 py-10'>
         <div className='container flex items-center justify-center'>
-          <div className='w-full lg:w-2/3'>
+          <div className='w-full'>
             <div className='heading6'>Frequently Asked Questions</div>
-            <div className='list-question'>
+            <div className='list-question grid grid-cols-1 md:grid-cols-2 gap-4'>
               {faqs.map((item, idx) => (
                 <div
                   key={item.id}
-                  className={`question-item hover-box-shadow pointer mt-5 px-7 rounded-lg border border-line cursor-pointer ${
+                  className={`question-item hover-box-shadow pointer bg-primary-dark mt-5 px-7 rounded-lg border border-line cursor-pointer ${
                     // faq === item.id ? 'open' : ''
                     faq === idx + 1 ? 'open' : ''
                   }`}
@@ -37,9 +37,7 @@ export default function Faqs() {
                   </div>
                   <div className='content-question'>
                     <div className='border-line w-full'></div>
-                    <div className='body3 text-secondary pb-4'>
-                      {item.answer}
-                    </div>
+                    <div className='body3 text-surface pb-4'>{item.answer}</div>
                   </div>
                 </div>
               ))}

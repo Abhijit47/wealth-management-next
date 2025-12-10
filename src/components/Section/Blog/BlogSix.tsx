@@ -9,16 +9,17 @@ interface Props {
 }
 
 const BlogSix: React.FC<Props> = ({ data }) => {
+  // console.log('uniqueCategories', uniqueCategories);
   return (
     <section
       id='blogs'
       className='list-blog three-col text-white style-six lg:py-[100px] sm:py-16 py-10'>
       <div className='container'>
         <div className='heading flex items-center justify-between'>
-          <h3 className='heading3'>Latest News</h3>
+          <h3 className='heading3'>Latest Articles</h3>
           <Link
             className='text-button underline hover:text-orange duration-300'
-            href='#'>
+            href='/blogs'>
             View All
           </Link>
         </div>
