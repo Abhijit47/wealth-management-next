@@ -46,80 +46,99 @@ const CounterSix = () => {
                 </p>
               </blockquote>
             </div>
-            <div className='grid xl:grid-cols-4 grid-cols-2 gap-y-8 lg:mt-10 mt-7'>
+            <div className='grid xl:grid-cols-5 grid-cols-2 gap-y-8 lg:mt-10 mt-7'>
               <div className='item'>
                 <div className='flex flex-col items-center'>
                   <div className='count-block flex items-center'>
-                    <div className='counter heading3 text-white'>
+                    <div className='counter heading4 text-white'>
                       <SlotCounter
-                        value={3.5}
+                        value={10}
                         animateOnVisible={{
                           triggerOnce: false,
                           rootMargin: '0px 0px -100px 0px',
                         }}
                       />
                     </div>
-                    <span className='heading3 text-white'>k</span>
+                    <span className='heading4 text-white'>+</span>
                   </div>
-                  <div className='body1 text-white text-center'>
-                    Business Setup Growth
+                  <div className='body5 text-white text-center'>
+                    Years of Experience
                   </div>
                 </div>
               </div>
               <div className='item'>
                 <div className='flex flex-col items-center'>
                   <div className='count-block flex items-center'>
-                    <div className='counter heading3 text-white'>
+                    <div className='counter heading4 text-white'>
                       <SlotCounter
-                        value={1.77}
+                        value={100}
                         animateOnVisible={{
                           triggerOnce: false,
                           rootMargin: '0px 0px -100px 0px',
                         }}
                       />
                     </div>
-                    <span className='heading3 text-white'>k</span>
+                    <span className='heading4 text-white'>+</span>
                   </div>
-                  <div className='body1 text-white text-center'>
-                    Business Problem Solving
+                  <div className='body5 text-white text-center'>
+                    Families Advised
                   </div>
                 </div>
               </div>
               <div className='item'>
                 <div className='flex flex-col items-center'>
                   <div className='count-block flex items-center'>
-                    <div className='counter heading3 text-white'>
+                    <div className='counter heading4 text-white'>
                       <SlotCounter
-                        value={298}
+                        value={15}
                         animateOnVisible={{
                           triggerOnce: false,
                           rootMargin: '0px 0px -100px 0px',
                         }}
                       />
                     </div>
-                    <span className='heading3 text-white'>k</span>
+                    <span className='heading4 text-white'>+</span>
                   </div>
-                  <div className='body1 text-white text-center'>
-                    Goal achiever
+                  <div className='body5 text-white text-center'>
+                    Investment Solutions Offered
                   </div>
                 </div>
               </div>
               <div className='item'>
                 <div className='flex flex-col items-center'>
                   <div className='count-block flex items-center'>
-                    <div className='counter heading3 text-white'>
+                    <div className='counter heading4 text-white'>
                       <SlotCounter
-                        value={246}
+                        value={30}
                         animateOnVisible={{
                           triggerOnce: false,
                           rootMargin: '0px 0px -100px 0px',
                         }}
                       />
                     </div>
-                    <span className='heading3 text-white'>k</span>
+                    <span className='heading4 text-white'>+ Cr</span>
                   </div>
-                  <div className='body1 text-white text-center'>
-                    Passive income earners
+                  <div className='body5 text-white text-center'>
+                    Assets Under Management
+                  </div>
+                </div>
+              </div>
+              <div className='item'>
+                <div className='flex flex-col items-center'>
+                  <div className='count-block flex items-center'>
+                    <div className='counter heading4 text-white'>
+                      <SlotCounter
+                        value={8}
+                        animateOnVisible={{
+                          triggerOnce: false,
+                          rootMargin: '0px 0px -100px 0px',
+                        }}
+                      />
+                    </div>
+                    <span className='heading4 text-white'>+</span>
+                  </div>
+                  <div className='body5 text-white text-center'>
+                    Countries Served
                   </div>
                 </div>
               </div>

@@ -26,42 +26,25 @@ const AboutSix = () => {
             </div>
             <div className='body1 text-placehover mt-10 text-sm space-y-4'>
               <p>
-                Life tosses many challenges at you when you try to realize
-                long-term aspirations, which includes immediate monetary
-                constraints and extensive list of investment options. Financial
-                Planning is the process of designing, implementing and
-                revisiting your personal financial strategy, that customized to
-                guide you from where you are now, to where you want to be down
-                the years.
+                Long-term financial success requires more than savings — it
+                requires a personalised, structured goal-based financial plan.
               </p>
               <p>
-                A good long-term investments planning includes contingency
-                planning, specific goals like retirement, property, education,
-                wedding, car and abroad visits etc. Their time horizon should be
-                planned in such a manner that they would be available when it is
-                time to meet our goals.
+                We help you align your goals such as retirement planning,
+                property purchase, higher education, weddings, global travel,
+                and wealth creation with the right investment horizon.
               </p>
               <p>
-                In a goal based financial planning be it short-term or long-term
-                goals, it is vital and essential to take into consideration of
-                changing inflation, Number of years horizon to achieve the set
-                goals, investible savings, liquidity requirement for day-to-day
-                life, nature of risk tolerance etc. So, planning for adequate
-                insurance cover for life, health, property etc. forms critical
-                part of financial planning.
+                Your plan incorporates inflation, liquidity needs, risk
+                tolerance, risk capacity and investible surplus to build a
+                resilient long-term strategy.
               </p>
               <p>
-                Budgeting is another important aspect while doing the financial
-                planning.A careful budgeting exercise without compromising minor
-                details can provide good scope for saving enough for investments
-                without perceptible influence on the lifestyle.
+                With adequate life and health insurance, proper budgeting, tax
+                planning and disciplined investing, your financial journey
+                becomes efficient, confident, and future-ready.
               </p>
-              <p>
-                The efficiency and usefulness of financial planning is solely
-                depending on the level of involvement and commitment in the
-                course and progression.
-              </p>
-              {`At Finatex, we're passionate about helping freelancers succeed in today's competitive digital landscape. With years of experience in the industry, we understand the unique challenges & opportunities that freelancers face when it comes to SEO and digital marketing.`}
+              {/* {`At Finatex, we're passionate about helping freelancers succeed in today's competitive digital landscape. With years of experience in the industry, we understand the unique challenges & opportunities that freelancers face when it comes to SEO and digital marketing.`} */}
             </div>
             {/* <div className='flex items-center gap-4 mt-9'>
               <div className='flex items-center'>
