@@ -89,12 +89,13 @@ export default function Navbar() {
             <div className='main flex items-center justify-between lg:h-20 h-16 py-4 px-7 rounded-full'>
               <Link className='menu-left-block' href='/'>
                 <Image
-                  src={'/logo.png'}
-                  width={4800}
-                  height={1320}
+                  src={'/new-logo.svg'}
+                  width={2560}
+                  height={725}
                   alt='logo'
                   priority={true}
-                  className='w-[150px] h-full max-sm:w-[128px]'
+                  className='w-[250px] h-fit max-sm:w-[128px]'
+                  // className='w-auto h-fit'
                 />
               </Link>
               <div className='menu-center-block h-full'>

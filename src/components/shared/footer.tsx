@@ -15,8 +15,9 @@ export default function Footer() {
                   <Image
                     width={4800}
                     height={1320}
-                    className='footer-logo w-[145px]'
-                    src='/logo-light.png'
+                    className='footer-logo w-auto h-20 object-left'
+                    // src='/logo-light.png'
+                    src={'/new-logo.svg'}
                     alt='Logo'
                   />
                   <div className='text caption1 text-white'>
